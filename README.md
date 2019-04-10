@@ -3,54 +3,41 @@
 
 A teaser React component/Scrivito widget for the Scrivito CMS.
 
+## Screenshot
+
+![Screenshot](https://raw.githubusercontent.com/mdwp/scrivito-reference-teaser/master/reference-teaser-screenshot.png)
+
 ## Installation
 
 Open your terminal.
 
 `$ cd` to your Scrivito project
 
-```
+```shell
 $ npm install scrivito-reference-teaser
 ```
 
-Import the widget in your javascript (e.g. in `index.js` or `Widgets/index.js`).
+Import the widget in your javascript (e.g. in `src/index.js` or `src/Widgets/index.js`).
 
-Add this line to your index.js:
-
-```
+```js
 import "scrivito-reference-teaser";
 ```
 
 ## Features
-The Reference Teaser Widget renders a teaser from a referenced page.
 
-## Development
+The Reference Teaser Widget renders a teaser from a referenced page. Includes title image, title and subtitle if set on referenced page.
 
-With `npm run build` you can build the package into `build/`.
+## Widget properties
 
-With `npm start` you'll start a continues process, that rebuilds `build/` automatically once the source code is changed.
-
-To add this library locally do the following in your scrivito app:
-
-```
-npm install file:<path to build folder>
-```
-
-e.g.
-
-```
-npm install file:../scrivito-reference-teaser/build/
-```
-
-To publish the package:
-
-```
-npm i && npm run build && cd build/ && npm publish
-```
+In the widget properties you can set:
+- Page
 
 ## Check code quality
 
-With `npm run eslint` and `npm run es-check` you can check your coding quality.
-
-
-
+```shell
+$ npm run eslint
+```
+and
+```shell
+$ npm run es-check
+```
