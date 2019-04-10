@@ -4,15 +4,15 @@ import * as Scrivito from 'scrivito';
 Scrivito.provideComponent('ReferenceTeaserWidget', ({ widget }) => {
   const teaser = widget.get('page');
 
-  /*if (!teaser) {
+  if (!teaser && Scrivito.isInPlaceEditingActive()) {
     return (
 
-        <InPlaceEditingPlaceholder>
+        <h4 className="text-center">
           Provide a reference to a page in the widget properties.
-        </InPlaceEditingPlaceholder>
+        </h4>
 
     );
-  }*/
+  }
 
   return (
     <div className="text-center">
